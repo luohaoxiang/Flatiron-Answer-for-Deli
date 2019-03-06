@@ -1,0 +1,28 @@
+let katzDeliLine = [];
+function takeANumber(currLine, newName) {
+  katzDeliLine.push(newName);
+  let numb;
+  for (let i = 0; i < currLine.length; i++) {
+    if (currLine[i] === newName) {
+      numb = i + 1;
+    }
+  } return `Welcome, ${newName}. You are number ${numb} in line.`
+}
+
+function nowServing(arg) {
+  let name = arg.shift();
+  if (name !== undefined) {
+    return name;
+  } else {
+    return "There is nobody waiting to be served!"
+  }
+}
+
+function currentLine(arg) {
+  let answer = [];
+  for (let i = 0; i < arg.length; i++) {
+    answer.push(i+1 + '.')
+    answer.push(arg[i]);
+
+  } return `The line is currently: ${answer.join(' ')}`
+}
