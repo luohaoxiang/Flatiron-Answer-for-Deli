@@ -1,0 +1,32 @@
+function theBeatlesPlay(musicArray, instrArray) {
+let emptyArray = [];
+for (let i = 0; i < musicArray.length; i++) {
+emptyArray.push(`${musicArray} plays ${instrArray}`)
+} return emptyArray;
+}
+
+function johnLennonFacts(arg) {
+let newArray = [];
+for (let i = 0; i < arg.length; i++) {
+newArray.push(arg[i] + '!!!');
+} return newArray;
+}
+
+function johnLennonFacts(arg) {
+let newArray = [];
+let i = 0;
+while (i < arg.length) {
+newArray.push(arg[i] + '!!!');
+i++
+} return newArray;
+}
+
+function iLoveTheBeatles(arg) {
+let emptyArray = [];
+do { 
+emptyArray.push("I love the Beatles!");
+arg++;
+}
+while (arg < 15);
+return emptyArray;
+}
